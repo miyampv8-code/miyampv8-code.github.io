@@ -39,7 +39,7 @@ except ImportError:
     sys.exit("Please run this first:   py -m pip install markdown-it-py")
 
 ROOT = Path(__file__).resolve().parent
-BASE = "https://miyampv8-code.github.io/CHHOYED/"   # your site address (must end with /)
+BASE = "https://miyampv8-code.github.io/"   # your site address (must end with /)
 SITE = "CHHOYED"
 GOATCOUNTER = "chhoyed"                              # same code as in js/app.js
 OG_IMAGE = BASE + "images/og-banner.png"
@@ -356,7 +356,7 @@ def not_found_page():
 
 
 def urlbase():
-    return "/" + BASE.split("//", 1)[1].split("/", 1)[1]    # "/CHHOYED/"
+    return "/" + BASE.split("//", 1)[1].split("/", 1)[1]    # "/" for a site at the root of the address
 
 
 # ---------------------------------------------------------------- write everything
